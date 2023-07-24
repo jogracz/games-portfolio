@@ -1,23 +1,29 @@
 import React from "react";
+import styled from "styled-components";
+
+import { primaryForeground } from "./constants/colors";
+import {
+  MENU_HEIGHT,
+  MOBILE_BREAKPOINT,
+  MOBILE_SIDE_PADDING,
+} from "./constants";
 
 import "./App.css";
+
+const ContentWrapper = styled.div`
+  color: ${primaryForeground};
+  height: calc(100% - ${MENU_HEIGHT}px);
+  padding: 40px;
+  @media (max-width: ${MOBILE_BREAKPOINT}px) {
+    padding-left: ${MOBILE_SIDE_PADDING}px;
+    padding-right: ${MOBILE_SIDE_PADDING}px;
+  }
+`;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ContentWrapper>Hello</ContentWrapper>
     </div>
   );
 }
