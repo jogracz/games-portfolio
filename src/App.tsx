@@ -7,6 +7,7 @@ import {
   MOBILE_BREAKPOINT,
   MOBILE_SIDE_PADDING,
 } from "./constants";
+import { games } from "./content";
 
 import { Header, ContentCard } from "./components";
 
@@ -27,8 +28,9 @@ function App() {
     <div className="App">
       <Header />
       <ContentWrapper>
-        <ContentCard />
-        <ContentCard />
+        {games.map((game) => (
+          <ContentCard {...game} />
+        ))}
       </ContentWrapper>
     </div>
   );
