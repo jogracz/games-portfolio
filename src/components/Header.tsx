@@ -5,14 +5,20 @@ import { primaryForeground, secondaryForeground } from "../constants/colors";
 import { MENU_HEIGHT } from "../constants";
 
 const HeaderWrapper = styled.div`
+  /* size */
   width: 100%;
   height: ${MENU_HEIGHT}px;
+  /* flex */
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  box-shadow: 0 0 10px #eee;
+  /* white space */
+  padding: 20px 20px 20px 20px;
+  /* text */
   color: ${primaryForeground};
   font-size: 30px;
+  /* other */
+  box-shadow: 0 0 10px #eee;
+  /* links */
   a {
     color: ${primaryForeground};
     :hover {
