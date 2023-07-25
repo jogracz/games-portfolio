@@ -41,7 +41,7 @@ function App() {
       <Header />
       <ContentWrapper>
         {games.map((game) => (
-          <ContentCard {...game} />
+          <ContentCard {...game} key={game.id} />
         ))}
       </ContentWrapper>
     </>
