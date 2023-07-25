@@ -24,6 +24,7 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* other */
   /* media queries */
   @media (max-width: ${MOBILE_BREAKPOINT}px) {
     padding-left: ${MOBILE_SIDE_PADDING}px;
@@ -38,14 +39,14 @@ const ContentWrapper = styled.div`
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
       <ContentWrapper>
         {games.map((game) => (
           <ContentCard {...game} />
         ))}
       </ContentWrapper>
-    </div>
+    </>
   );
 }
 
