@@ -4,4 +4,5 @@ export type Game = {
   link: string;
   platform: string;
   stack: string;
+  imgPath: string;
 };
