@@ -110,14 +110,14 @@ const DescriptionWrapper = styled.div`
 //   console.log();
 // };
 
-const MobileHeader = styled.h1`
+const MobileHeader = styled.h2`
   display: none;
   @media (max-width: ${MOBILE_BREAKPOINT}px) {
     display: block;
   }
 `;
 
-const DesktopHeader = styled.h1`
+const DesktopHeader = styled.h2`
   @media (max-width: ${MOBILE_BREAKPOINT}px) {
     display: none;
   }
