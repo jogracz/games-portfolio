@@ -147,7 +147,7 @@ const ContentCard = (props: ContentCardProps) => {
             <b>Stack:</b> {stack}
           </p>
         </div>
-        <p style={{ color: darkDoctorGreen }}>Play the game!</p>
+        {link && <p style={{ color: darkDoctorGreen }}>Play the game!</p>}
       </DescriptionWrapper>
     </CardWrapper>
   );
