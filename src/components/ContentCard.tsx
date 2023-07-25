@@ -122,16 +122,16 @@ const DesktopHeader = styled.h1`
 type ContentCardProps = Game;
 
 const ContentCard = (props: ContentCardProps) => {
-  const { name, category, link, platform, stack, imgPath } = props;
+  const { title, category, link, platform, stack, imgPath } = props;
 
   return (
     <CardWrapper href={link} target="_blank">
-      <MobileHeader>{name}</MobileHeader>
+      <MobileHeader>{title}</MobileHeader>
       <ImageWrapper>
         <Image src={imgPath} />
       </ImageWrapper>
       <Description>
-        <DesktopHeader>{name}</DesktopHeader>
+        <DesktopHeader>{title}</DesktopHeader>
         <p>
           <b>Category:</b> {category}
         </p>

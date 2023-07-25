@@ -1,7 +1,7 @@
 export const games = [
   {
     id: 0,
-    name: "Rich Skies",
+    title: "Rich Skies",
     category: "Arcade",
     link: "https://richskies-portfolio.netlify.app/",
     platform: "Web - Mobile & Desktop",
@@ -10,7 +10,7 @@ export const games = [
   },
   {
     id: 1,
-    name: "Planet Sweet",
+    title: "Planet Sweet",
     category: "Arcade, Side-scroller",
     link: "https://planetsweet-portfolio.netlify.app/",
     platform: "Web - Desktop & Mobile",

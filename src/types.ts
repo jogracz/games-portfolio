@@ -1,6 +1,6 @@
 export type Game = {
   id: number;
-  name: string;
+  title: string;
   category: string;
   link: string;
   platform: string;
