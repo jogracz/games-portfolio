@@ -4,7 +4,8 @@ import styled from "styled-components";
 import {
   primaryForeground,
   secondaryForeground,
-  primaryBackground,
+  purple,
+  lightDoctorGreen,
 } from "../constants/colors";
 import { MENU_HEIGHT } from "../constants";
 
@@ -19,10 +20,14 @@ const HeaderWrapper = styled.div`
   padding: 20px 20px 20px 20px;
   /* text */
   color: ${primaryForeground};
-  font-size: 30px;
+  /* color: ${purple}; */
+  font-size: 20px;
+  font-weight: bold;
   /* other */
-  box-shadow: 0 0 10px #eee;
-  background-color: ${primaryBackground};
+  /* box-shadow: 0 0 10px lightgray; */
+  border-bottom: 1px solid #eee;
+  background-color: ${lightDoctorGreen};
+  /* opacity: 0.5; */
   /* links */
   a {
     color: ${primaryForeground};
@@ -36,7 +41,7 @@ const HeaderWrapper = styled.div`
 `;
 
 const Header = () => {
-  return <HeaderWrapper>Joanna Graczyk - HTML5 Games</HeaderWrapper>;
+  return <HeaderWrapper>Joanna Graczyk - Games Portfolio</HeaderWrapper>;
 };
 
 export default Header;
