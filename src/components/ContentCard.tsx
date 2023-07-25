@@ -18,12 +18,13 @@ const CardWrapper = styled.a`
   /* size */
   width: 900px;
   max-width: 100%;
+  min-height: 300px;
   /* white space */
   padding: 10px;
   margin: 20px;
   /* flex */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: left;
   flex-wrap: wrap;
   /* other */
@@ -40,7 +41,7 @@ const CardWrapper = styled.a`
     box-shadow: 0 0 20px ${lightDoctorGreen};
   }
   &:active {
-    color: ${secondaryForeground};
+    color: ${coral};
     box-shadow: 0 0 20px ${lightDoctorGreen};
   }
 
@@ -82,16 +83,18 @@ const Image = styled.img`
   }
 `;
 
-const Description = styled.div`
+const DescriptionWrapper = styled.div`
   /* size */
   width: 40%;
+  min-height: 100%;
   /* white space */
-  margin-top: 10px;
+
   /* flex */
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: left;
+  justify-content: space-around;
+  /* background-color: teal; */
   /* other */
   p {
     margin: 5px 0 5px 0;
@@ -99,6 +102,7 @@ const Description = styled.div`
   /* media queries */
   @media (max-width: ${MOBILE_BREAKPOINT}px) {
     width: 100%;
+    margin-top: 10px;
   }
 `;
 
@@ -130,18 +134,21 @@ const ContentCard = (props: ContentCardProps) => {
       <ImageWrapper>
         <Image src={imgPath} />
       </ImageWrapper>
-      <Description>
-        <DesktopHeader>{title}</DesktopHeader>
-        <p>
-          <b>Category:</b> {category}
-        </p>
-        <p>
-          <b>Platform:</b> {platform}
-        </p>
-        <p>
-          <b>Stack:</b> {stack}
-        </p>
-      </Description>
+      <DescriptionWrapper>
+        <div>
+          <DesktopHeader>{title}</DesktopHeader>
+          <p>
+            <b>Category:</b> {category}
+          </p>
+          <p>
+            <b>Platform:</b> {platform}
+          </p>
+          <p>
+            <b>Stack:</b> {stack}
+          </p>
+        </div>
+        <p style={{ color: darkDoctorGreen }}>Play the game!</p>
+      </DescriptionWrapper>
     </CardWrapper>
   );
 };
