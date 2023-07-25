@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import { primaryForeground, secondaryForeground } from "../constants/colors";
+import {
+  primaryForeground,
+  secondaryForeground,
+  primaryBackground,
+} from "../constants/colors";
 import { MENU_HEIGHT } from "../constants";
 
 const HeaderWrapper = styled.div`
@@ -18,6 +22,7 @@ const HeaderWrapper = styled.div`
   font-size: 30px;
   /* other */
   box-shadow: 0 0 10px #eee;
+  background-color: ${primaryBackground};
   /* links */
   a {
     color: ${primaryForeground};

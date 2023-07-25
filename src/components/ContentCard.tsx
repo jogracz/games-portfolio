@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import { primaryForeground, secondaryForeground } from "../constants/colors";
+import {
+  primaryForeground,
+  secondaryForeground,
+  primaryBackground,
+} from "../constants/colors";
 import { MOBILE_BREAKPOINT, MOBILE_SIDE_PADDING } from "../constants";
 import { Game } from "../types";
 
@@ -21,6 +25,7 @@ const CardWrapper = styled.div`
   box-shadow: 0 0 10px #eee;
   cursor: pointer;
   border-radius: 5px;
+  background-color: ${primaryBackground};
   /* media queries */
   @media (max-width: ${MOBILE_BREAKPOINT}px) {
     padding-left: ${MOBILE_SIDE_PADDING}px;
