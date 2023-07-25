@@ -11,8 +11,6 @@ import { games } from "./content";
 
 import { Header, ContentCard } from "./components";
 
-import "./App.css";
-
 const ContentWrapper = styled.div`
   /* size */
   height: calc(100% - ${MENU_HEIGHT}px);

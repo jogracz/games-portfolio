@@ -1,18 +1,20 @@
 export const games = [
   {
     id: 0,
-    name: "Planet Sweet",
-    link: "https://planetsweet-portfolio.netlify.app/",
-    platform: "Primarly Desktop, but works on mobile too",
+    name: "Rich Skies",
+    category: "Arcade",
+    link: "https://richskies-portfolio.netlify.app/",
+    platform: "Web - Mobile & Desktop",
     stack: "HTML5 + Vanilla Javascript",
-    imgPath: "assets/planetSweet/1.png",
+    imgPath: "assets/richSkies/5.png", //3,5
   },
   {
     id: 1,
-    name: "Rich Skies",
-    link: "https://richskies-portfolio.netlify.app/",
-    platform: "Mobile & Desktop",
+    name: "Planet Sweet",
+    category: "Arcade, Side-scroller",
+    link: "https://planetsweet-portfolio.netlify.app/",
+    platform: "Web - Desktop & Mobile",
     stack: "HTML5 + Vanilla Javascript",
-    imgPath: "assets/richSkies/1.png",
+    imgPath: "assets/planetSweet/7.png", //1,6,7
   },
 ];
