@@ -8,6 +8,8 @@ import {
   MOBILE_SIDE_PADDING,
 } from "./constants";
 
+import { Header, ContentCard } from "./components";
+
 import "./App.css";
 
 const ContentWrapper = styled.div`
@@ -23,7 +25,11 @@ const ContentWrapper = styled.div`
 function App() {
   return (
     <div className="App">
-      <ContentWrapper>Hello</ContentWrapper>
+      <Header />
+      <ContentWrapper>
+        <ContentCard />
+        <ContentCard />
+      </ContentWrapper>
     </div>
   );
 }
