@@ -5,30 +5,45 @@ import { primaryForeground, secondaryForeground } from "../constants/colors";
 import { MOBILE_BREAKPOINT, MOBILE_SIDE_PADDING } from "../constants";
 import { Game } from "../types";
 
+// STYLED COMPONENTS
 const CardWrapper = styled.div`
+  /* size */
   width: 900px;
   max-width: 100%;
-  box-shadow: 0 0 10px #eee;
+  /* white space */
   padding: 10px;
   margin: 20px;
-  cursor: pointer;
-  border-radius: 5px;
   /* flex */
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* other */
+  box-shadow: 0 0 10px #eee;
+  cursor: pointer;
+  border-radius: 5px;
+  /* media queries */
   @media (max-width: ${MOBILE_BREAKPOINT}px) {
     padding-left: ${MOBILE_SIDE_PADDING}px;
     padding-right: ${MOBILE_SIDE_PADDING}px;
   }
-  /* cllickable */
 `;
 
 const Image = styled.img`
+  /* size */
   width: 700px;
-  /* height: 300px; */
   max-width: 50%;
-  /* max-height: 50%; */
+  /* flex */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+`;
+
+const Description = styled.div`
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
 `;
 
 type ContentCardProps = Game;
@@ -39,13 +54,12 @@ const ContentCard = (props: ContentCardProps) => {
   return (
     <CardWrapper>
       <Image src={imgPath} />
-      {/* game img */}
-      Gameimg
-      {/* game desc */}
-      game desc Name: {name}
-      Link: {link}
-      Platform: {platform}
-      Stack: {stack}
+      <Description>
+        <h1>{name}</h1>
+        <p>platform: {platform}</p>
+        <p>Stack: {stack}</p>
+        <p> Link: {link}</p>
+      </Description>
     </CardWrapper>
   );
 };
