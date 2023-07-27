@@ -13,6 +13,7 @@ import {
 } from "../constants/colors";
 import { MOBILE_BREAKPOINT, MOBILE_SIDE_PADDING } from "../constants";
 import { Game } from "../types";
+import Description from "./Description";
 
 const CardWrapper = styled.a`
   /* size */
@@ -117,16 +118,10 @@ const MobileHeader = styled.h2`
   }
 `;
 
-const DesktopHeader = styled.h2`
-  @media (max-width: ${MOBILE_BREAKPOINT}px) {
-    display: none;
-  }
-`;
-
 type ContentCardProps = Game;
 
 const ContentCard = (props: ContentCardProps) => {
-  const { title, category, link, platform, stack, imgPath } = props;
+  const { title, link, imgPath } = props;
 
   return (
     <CardWrapper href={link} target="_blank">
@@ -134,21 +129,7 @@ const ContentCard = (props: ContentCardProps) => {
       <ImageWrapper>
         <Image src={imgPath} />
       </ImageWrapper>
-      <DescriptionWrapper>
-        <div>
-          <DesktopHeader>{title}</DesktopHeader>
-          <p>
-            <b>Category:</b> {category}
-          </p>
-          <p>
-            <b>Platform:</b> {platform}
-          </p>
-          <p>
-            <b>Stack:</b> {stack}
-          </p>
-        </div>
-        {link && <p style={{ color: darkDoctorGreen }}>Play the game!</p>}
-      </DescriptionWrapper>
+      <Description {...props} isLink={!!link} />
     </CardWrapper>
   );
 };
