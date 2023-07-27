@@ -6,6 +6,8 @@ import {
   secondaryForeground,
   purple,
   lightDoctorGreen,
+  darkDoctorGreen,
+  coral,
 } from "../constants/colors";
 import { MENU_HEIGHT } from "../constants";
 
@@ -16,32 +18,42 @@ const HeaderWrapper = styled.div`
   /* flex */
   display: flex;
   align-items: center;
+  justify-content: space-between;
   /* white space */
   padding: 20px 20px 20px 20px;
   /* text */
   color: ${primaryForeground};
+  color: white;
   /* color: ${purple}; */
   font-size: 20px;
   font-weight: bold;
   /* other */
   /* box-shadow: 0 0 10px lightgray; */
   border-bottom: 1px solid #eee;
-  background-color: ${lightDoctorGreen};
+  background-color: ${darkDoctorGreen};
+  background-color: teal;
   /* opacity: 0.5; */
   /* links */
   a {
-    color: ${primaryForeground};
-    :hover {
-      color: ${secondaryForeground};
+    color: ${coral};
+    &:hover {
+      color: ${coral};
     }
-    :active {
-      color: ${secondaryForeground};
+    &:active {
+      color: ${coral};
     }
   }
 `;
 
 const Header = () => {
-  return <HeaderWrapper>Joanna Graczyk - Games Portfolio</HeaderWrapper>;
+  return (
+    <HeaderWrapper>
+      <p>Joanna Graczyk - Games Portfolio</p>
+      <a href="https://www.linkedin.com/in/joanna-graczyk/" target="_blank">
+        Linkedin
+      </a>
+    </HeaderWrapper>
+  );
 };
 
 export default Header;
