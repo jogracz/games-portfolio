@@ -23,6 +23,6 @@ export const games = [
     category: "Arcade",
     platform: "Android",
     stack: "HTML5 + Javascript + Cordova",
-    imgPath: "assets/richSkies/11.png", //3,5
+    imgPath: "assets/richSkies/comingSoon3.png", //3,5
   },
 ];
