@@ -6,7 +6,7 @@ export const games = [
     link: "https://richskies-portfolio.netlify.app/",
     platform: "Web - Mobile & Desktop",
     stack: "HTML5 + Javascript",
-    imgPath: "assets/richSkies/5.png", //3,5
+    imgPath: "assets/richSkies/12.png", //3,5
   },
   {
     id: 1,
