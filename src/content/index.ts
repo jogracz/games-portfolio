@@ -13,7 +13,7 @@ export const games = [
     title: "Planet Sweet",
     category: "Arcade, Side-scroller",
     link: "https://planetsweet-portfolio.netlify.app/",
-    platform: "Web - Desktop & Mobile",
+    platform: "Web - Desktop",
     stack: "HTML5 + Javascript",
     imgPath: "assets/planetSweet/7.png", //1,6,7
   },
