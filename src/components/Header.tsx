@@ -34,6 +34,7 @@ const HeaderWrapper = styled.div`
   /* opacity: 0.5; */
   /* links */
   a {
+    margin-left: 50px;
     color: ${orange};
     &:hover {
       color: ${coral};
