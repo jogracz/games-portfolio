@@ -9,7 +9,7 @@ import {
 } from "./constants";
 import { games } from "./content";
 
-import { Header, ContentCard } from "./components";
+import { Header, ContentCard, About } from "./components";
 
 const ContentWrapper = styled.div`
   /* size */
@@ -27,6 +27,7 @@ const ContentWrapper = styled.div`
   @media (max-width: ${MOBILE_BREAKPOINT}px) {
     padding-left: ${MOBILE_SIDE_PADDING}px;
     padding-right: ${MOBILE_SIDE_PADDING}px;
+    padding: ${MOBILE_SIDE_PADDING}px;
   }
 `;
 // TODO:
@@ -40,6 +41,7 @@ function App() {
     <>
       <Header />
       <ContentWrapper>
+        <About />
         {games.map((game) => (
           <ContentCard {...game} key={game.id} />
         ))}

@@ -26,3 +26,7 @@ export const games = [
     imgPath: "assets/richSkies/comingSoon3.png", //3,5
   },
 ];
+
+export const about = `Hi! I'm Joanna, a javascript game developer from the dragon city of Krakow, Poland.
+  When not programming, I am traveling, hiking and learning to paint with watercolors.
+  Come checkout some of my online games!`;

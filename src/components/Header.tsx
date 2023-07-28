@@ -6,6 +6,7 @@ import {
   purple,
   darkDoctorGreen,
   coral,
+  orange,
 } from "../constants/colors";
 import { MENU_HEIGHT } from "../constants";
 
@@ -33,7 +34,7 @@ const HeaderWrapper = styled.div`
   /* opacity: 0.5; */
   /* links */
   a {
-    color: ${coral};
+    color: ${orange};
     &:hover {
       color: ${coral};
     }
