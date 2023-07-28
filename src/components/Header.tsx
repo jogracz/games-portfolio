@@ -3,9 +3,7 @@ import styled from "styled-components";
 
 import {
   primaryForeground,
-  secondaryForeground,
   purple,
-  lightDoctorGreen,
   darkDoctorGreen,
   coral,
 } from "../constants/colors";

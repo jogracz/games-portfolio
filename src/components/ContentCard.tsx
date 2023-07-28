@@ -5,11 +5,8 @@ import {
   primaryForeground,
   secondaryForeground,
   primaryBackground,
-  secondaryBackground,
   coral,
   lightDoctorGreen,
-  darkDoctorGreen,
-  orange,
 } from "../constants/colors";
 import { MOBILE_BREAKPOINT, MOBILE_SIDE_PADDING } from "../constants";
 import { Game } from "../types";
