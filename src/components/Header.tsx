@@ -47,7 +47,11 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <p>Joanna Graczyk - Games Portfolio</p>
-      <a href="https://www.linkedin.com/in/joanna-graczyk/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/joanna-graczyk/"
+        target="_blank"
+        rel="noreferrer"
+      >
         Linkedin
       </a>
     </HeaderWrapper>
