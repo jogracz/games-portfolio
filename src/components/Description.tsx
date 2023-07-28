@@ -31,6 +31,10 @@ const DesktopHeader = styled.h2`
   }
 `;
 
+const GreenText = styled.p`
+  color: ${darkDoctorGreen};
+`;
+
 type DescriptionProps = {
   id: number;
   title: string;
@@ -42,6 +46,8 @@ type DescriptionProps = {
 
 const Description = (props: DescriptionProps) => {
   const { title, category, isLink, platform, stack } = props;
+
+  const greenText = isLink ? "Play the game!" : "Coming soon!";
 
   return (
     <DescriptionWrapper>
@@ -57,7 +63,7 @@ const Description = (props: DescriptionProps) => {
           <b>Stack:</b> {stack}
         </p>
       </div>
-      {isLink && <p style={{ color: darkDoctorGreen }}>Play the game!</p>}
+      <GreenText>{greenText}</GreenText>
     </DescriptionWrapper>
   );
 };
