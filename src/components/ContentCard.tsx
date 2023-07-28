@@ -81,33 +81,6 @@ const Image = styled.img`
   }
 `;
 
-const DescriptionWrapper = styled.div`
-  /* size */
-  width: 40%;
-  min-height: 100%;
-  /* white space */
-
-  /* flex */
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: space-around;
-  /* background-color: teal; */
-  /* other */
-  p {
-    margin: 5px 0 5px 0;
-  }
-  /* media queries */
-  @media (max-width: ${MOBILE_BREAKPOINT}px) {
-    width: 100%;
-    margin-top: 10px;
-  }
-`;
-
-// const handleClick = (e: Event) => {
-//   console.log();
-// };
-
 const MobileHeader = styled.h2`
   display: none;
   @media (max-width: ${MOBILE_BREAKPOINT}px) {
