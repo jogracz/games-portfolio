@@ -29,4 +29,4 @@ export const games = [
 
 export const about = `Hi! I'm Joanna, a javascript game developer from the dragon city of Krakow, Poland.
   When not programming, I am traveling, hiking and learning to paint with watercolors.
-  Come checkout some of my online games!`;
+  Come check out some of my online games!`;
