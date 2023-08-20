@@ -19,6 +19,14 @@ export const games = [
   },
   {
     id: 2,
+    title: "Wizard of moss",
+    category: "Platformer",
+    platform: "Web - Destkop",
+    stack: "GDevelop",
+    imgPath: "assets/wizardOfMossCS.png", //3,5
+  },
+  {
+    id: 3,
     title: "Rich Skies on Google Play",
     category: "Arcade",
     platform: "Android",
